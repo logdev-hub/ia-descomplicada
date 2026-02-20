@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inteligência Artificial Descomplicada | Oficina</title>
-  <meta name="description" content="Site de apoio para oficina introdutória de 4 horas sobre Inteligência Artificial Descomplicada, com técnicas de prompting, práticas e uso responsável." />
+  <title>Inteligência Artificial Descomplicada | Guia Introdutório</title>
+  <meta name="description" content="Guia introdutório sobre Inteligência Artificial Descomplicada com técnicas de prompting, práticas aplicadas e uso responsável." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
     <span class="forma forma-3"></span>
   </div>
 
-  <nav class="navbar navbar-expand-lg barra-topo sticky-top" aria-label="Navegação principal">
+  <nav class="navbar navbar-expand-xl barra-topo sticky-top" aria-label="Navegação principal">
     <div class="container py-1">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
         <span class="marca-icone">IA</span>
@@ -31,9 +31,31 @@
       </button>
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-principal">
-          <li class="nav-item"><a class="nav-link" href="#oficina">Oficina</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fundamentos">Fundamentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Módulos</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="#modulos">Visão geral dos módulos</a></li>
+              <li><a class="dropdown-item" href="#fundamentos">Módulo 1 | Fundamentos</a></li>
+              <li><a class="dropdown-item" href="#tecnicas">Módulo 2 | Técnicas</a></li>
+              <li><a class="dropdown-item" href="#gerador">Módulo 3 | Laboratórios</a></li>
+              <li><a class="dropdown-item" href="#boas-praticas">Módulo 4 | Uso consciente</a></li>
+              <li><a class="dropdown-item" href="#quiz-avaliativo">Módulo 5 | Quiz e revisão</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="categoria-bases.html">Bases e estrutura</a></li>
+              <li><a class="dropdown-item" href="categoria-shots.html">Técnicas por shots</a></li>
+              <li><a class="dropdown-item" href="categoria-raciocinio.html">Raciocínio e encadeamento</a></li>
+              <li><a class="dropdown-item" href="categoria-controle.html">Níveis de controle</a></li>
+              <li><a class="dropdown-item" href="categoria-qualidade.html">Qualidade e verificação</a></li>
+              <li><a class="dropdown-item" href="categoria-interacao.html">Interação e metaprompts</a></li>
+            </ul>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laboratórios</a>
             <ul class="dropdown-menu menu-laboratorios">
@@ -42,8 +64,15 @@
               <li><a class="dropdown-item" href="#interativo-avancado">Interativo avançado</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#boas-praticas">Boas práticas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conteúdo</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="como-ia-funciona.html">Como a IA funciona</a></li>
+              <li><a class="dropdown-item" href="glossario-ia.html">Glossário de IA</a></li>
+              <li><a class="dropdown-item" href="#resumo-principal">Resumo dos pontos principais</a></li>
+              <li><a class="dropdown-item" href="#recursos">Recursos complementares</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -53,11 +82,11 @@
     <div class="container py-5 py-lg-6">
       <div class="row align-items-center g-4">
         <div class="col-lg-12">
-          <span class="etiqueta mb-3">Oficina introdutória | Modalidade 64 | 100% Bolsa RS</span>
+          <span class="etiqueta mb-3">Guia introdutório para iniciantes</span>
           <h1 class="display-5 fw-bold mb-3">INTELIGÊNCIA ARTIFICIAL DESCOMPLICADA</h1>
-          <p class="lead mb-4">Uma porta de entrada leve, prática e inspiradora para o universo da IA. Este site foi pensado para apoiar uma oficina de 4 horas, com linguagem simples, técnicas de prompts e aplicação imediata.</p>
+          <p class="lead mb-4">Um guia educacional leve, prático e progressivo para entender IA e escrever prompts melhores no dia a dia, com linguagem simples e atividades aplicadas.</p>
           <div class="d-flex flex-wrap gap-2">
-            <a href="#roteiro" class="btn btn-ia btn-lg">Ver roteiro da oficina</a>
+            <a href="#roteiro" class="btn btn-ia btn-lg">Ver roteiro de estudo</a>
             <a href="#tecnicas" class="btn btn-outline-light btn-lg">Explorar prompts</a>
           </div>
         </div>
@@ -66,18 +95,18 @@
   </header>
 
   <main>
-    <section id="oficina" class="py-5">
+    <section id="modulos" class="py-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-8">
-            <h2 class="titulo-secao">Como esta oficina está organizada</h2>
-            <p class="texto-secao">A proposta combina teoria leve + prática guiada. Cada bloco trabalha uma situação de aprendizagem, conectando conceitos essenciais com aplicação real.</p>
+            <h2 class="titulo-secao">Como este guia está organizado em módulos</h2>
+            <p class="texto-secao">A proposta combina teoria leve + prática guiada. Cada módulo trabalha situações de aprendizagem conectando fundamentos com aplicação no dia a dia.</p>
           </div>
           <div class="col-lg-4">
             <div class="card card-bloco h-100">
               <div class="card-body">
                 <h3 class="h6">Perfil do público</h3>
-                <p class="mb-0">Iniciantes ou pessoas com pouco contato com IA, buscando aprender sem jargões e com foco em utilidade prática.</p>
+                <p class="mb-0">Iniciantes ou pessoas com pouco contato com IA, buscando aprender sem jargoes e com foco em utilidade pratica.</p>
               </div>
             </div>
           </div>
@@ -89,7 +118,7 @@
               <div class="card-body">
                 <span class="badge text-bg-light">Módulo 1 | 40 min</span>
                 <h3 class="h5 mt-3">Abertura e repertório</h3>
-                <p>Quebrar mitos de IA, alinhar objetivos e mostrar como prompts funcionam como instruções claras.</p>
+                <p>Quebrar mitos sobre IA, alinhar expectativas e mostrar por que prompts funcionam como instrucoes claras.</p>
                 <p class="mb-0 pequeno"><strong>Situação:</strong> "Você explicaria uma tarefa sem contexto?"</p>
               </div>
             </article>
@@ -99,7 +128,7 @@
               <div class="card-body">
                 <span class="badge text-bg-light">Módulo 2 | 60 min</span>
                 <h3 class="h5 mt-3">Fundamentos e bases</h3>
-                <p>Clareza, contexto, persona, delimitadores e exemplos. Comparação entre prompt fraco e prompt forte.</p>
+                <p>Clareza, contexto, persona, delimitadores e exemplos. Comparacao entre prompt fraco e prompt forte.</p>
                 <p class="mb-0 pequeno"><strong>Situação:</strong> reescrever prompts confusos em grupo.</p>
               </div>
             </article>
@@ -109,7 +138,7 @@
               <div class="card-body">
                 <span class="badge text-bg-light">Módulo 3 | 80 min</span>
                 <h3 class="h5 mt-3">Técnicas de prompting</h3>
-                <p>Shots, cadeias de raciocínio, verificação, autorreflexão e controle de saída com escalas.</p>
+                <p>Shots, cadeias de raciocinio, verificacao, autorreflexao e controle de saida com escalas.</p>
                 <p class="mb-0 pequeno"><strong>Situação:</strong> laboratório com prompts copiáveis.</p>
               </div>
             </article>
@@ -119,7 +148,7 @@
               <div class="card-body">
                 <span class="badge text-bg-light">Módulo 4 | 60 min</span>
                 <h3 class="h5 mt-3">Mini projeto e fechamento</h3>
-                <p>Criar um fluxo de prompts para um caso real e aplicar boas práticas de uso responsável.</p>
+                <p>Criar um fluxo de prompts para um caso real e aplicar boas praticas de uso responsavel.</p>
                 <p class="mb-0 pequeno"><strong>Situação:</strong> cada equipe apresenta um roteiro de uso.</p>
               </div>
             </article>
@@ -130,6 +159,7 @@
 
     <section id="fundamentos" class="py-5 secao-destaque-clara">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 1 | Fundamentos</span>
         <div class="row g-4 align-items-stretch">
           <div class="col-lg-7">
             <h2 class="titulo-secao">Fundamentos descomplicados</h2>
@@ -189,10 +219,11 @@
 
     <section id="tecnicas" class="py-5">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 2 | Técnicas</span>
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
           <div>
             <h2 class="titulo-secao mb-1">Biblioteca de técnicas de prompting</h2>
-            <p class="texto-secao mb-0">Conteúdo baseado nos documentos analisados (PDF + Word), com fundamentos, analogias e exemplos prontos para teste.</p>
+            <p class="texto-secao mb-0">Conteudo didatico com fundamentos, analogias simples, exemplos do dia a dia e desafios prontos para praticar.</p>
           </div>
           <span class="selo-total" id="totalTecnicas">0 técnicas</span>
         </div>
@@ -268,6 +299,7 @@
 
     <section id="gerador" class="py-5 secao-destaque-clara">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 3 | Laboratórios</span>
         <div class="row g-4 align-items-start">
           <div class="col-lg-5">
             <h2 class="titulo-secao">Laboratório rápido de prompts</h2>
@@ -284,27 +316,27 @@
             <form id="formularioGerador" class="row g-3" novalidate>
               <div class="col-md-6">
                 <label for="campoObjetivo" class="form-label">Objetivo</label>
-                <input type="text" class="form-control" id="campoObjetivo" placeholder="Ex.: Criar plano de aula introdutório de IA" required />
+                <input type="text" class="form-control" id="campoObjetivo" placeholder="Ex.: Organizar uma viagem curta em família" required />
               </div>
               <div class="col-md-6">
                 <label for="campoPublico" class="form-label">Público-alvo</label>
-                <input type="text" class="form-control" id="campoPublico" placeholder="Ex.: Iniciantes de 16 a 25 anos" required />
+                <input type="text" class="form-control" id="campoPublico" placeholder="Ex.: Pessoas adultas sem experiência no tema" required />
               </div>
               <div class="col-md-6">
                 <label for="campoContexto" class="form-label">Contexto</label>
-                <input type="text" class="form-control" id="campoContexto" placeholder="Ex.: Oficina de 4 horas, formato prático" />
+                <input type="text" class="form-control" id="campoContexto" placeholder="Ex.: Viagem de até 3 dias com orçamento limitado" />
               </div>
               <div class="col-md-6">
                 <label for="campoFormato" class="form-label">Formato de saída</label>
-                <input type="text" class="form-control" id="campoFormato" placeholder="Ex.: lista em tópicos com exemplos" />
+                <input type="text" class="form-control" id="campoFormato" placeholder="Ex.: checklist em tópicos com prioridades" />
               </div>
               <div class="col-md-6">
                 <label for="campoTom" class="form-label">Tom e estilo</label>
-                <input type="text" class="form-control" id="campoTom" placeholder="Ex.: didático, simples, objetivo" />
+                <input type="text" class="form-control" id="campoTom" placeholder="Ex.: simples, prático e amigável" />
               </div>
               <div class="col-md-6">
                 <label for="campoRestricoes" class="form-label">Restrições</label>
-                <input type="text" class="form-control" id="campoRestricoes" placeholder="Ex.: evitar jargões, máximo 300 palavras" />
+                <input type="text" class="form-control" id="campoRestricoes" placeholder="Ex.: orçamento máximo de R$ 1.000" />
               </div>
               <div class="col-12">
                 <label for="campoTecnica" class="form-label">Técnica sugerida</label>
@@ -334,6 +366,11 @@
               <button type="button" id="botaoCopiarPromptGerado" class="btn btn-outline-primary">Copiar prompt gerado</button>
               <button type="button" id="botaoLimparPromptGerado" class="btn btn-outline-secondary">Limpar</button>
             </div>
+            <div class="caixa-saida-mais mt-3" id="saidaMaisGerador">
+              <h3 class="h6 mb-2">Saída+ | Informações complementares</h3>
+              <p class="mb-2">Depois de gerar o prompt, valide se ele contém objetivo claro, contexto real e formato de saída definido.</p>
+              <p class="mb-0">Dica: teste 2 versões com pequenas mudanças de tom para comparar resultados.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -341,6 +378,7 @@
 
     <section id="debug-prompts" class="py-5">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 3 | Laboratórios</span>
         <div class="row g-4 align-items-start">
           <div class="col-lg-5">
             <h2 class="titulo-secao">Debug de Prompts</h2>
@@ -381,6 +419,11 @@
                   <button type="button" id="botaoCopiarPromptDepurado" class="btn btn-outline-primary">Copiar prompt depurado</button>
                   <button type="button" id="botaoLimparPromptDepurado" class="btn btn-outline-secondary">Limpar</button>
                 </div>
+                <div class="caixa-saida-mais mt-3" id="saidaMaisDebug">
+                  <h3 class="h6 mb-2">Saída+ | Informações complementares</h3>
+                  <p class="mb-2">Use o diagnóstico para revisar primeiro os itens com selo "AJUSTAR".</p>
+                  <p class="mb-0">Regra prática: quanto menos ambiguidade no pedido, maior a consistência da resposta.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -390,6 +433,7 @@
 
     <section id="interativo-avancado" class="py-5 secao-destaque-clara">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 3 | Laboratórios</span>
         <div class="row g-4 align-items-start">
           <div class="col-lg-5">
             <h2 class="titulo-secao">Prompt Interativo Avançado</h2>
@@ -472,6 +516,11 @@
                 <button type="button" id="botaoCopiarInterativoAvancado" class="btn btn-outline-primary">Copiar prompt avançado</button>
                 <button type="button" id="botaoLimparInterativoAvancado" class="btn btn-outline-secondary">Limpar</button>
               </div>
+              <div class="caixa-saida-mais mt-3" id="saidaMaisInterativo">
+                <h3 class="h6 mb-2">Saída+ | Informações complementares</h3>
+                <p class="mb-2">Se o usuário não tiver dados suficientes, mantenha o fluxo de perguntas numeradas ativo.</p>
+                <p class="mb-0">Finalize sempre com confirmação de entendimento e próximos passos objetivos.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -480,6 +529,7 @@
 
     <section id="boas-praticas" class="py-5">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 4 | Uso consciente</span>
         <div class="row g-4">
           <div class="col-lg-7">
             <h2 class="titulo-secao">Boas práticas e uso consciente da IA</h2>
@@ -521,9 +571,9 @@
           </div>
           <div class="col-lg-5">
             <aside class="painel-riscos h-100">
-              <h3 class="h5">Recomendação para a oficina</h3>
+              <h3 class="h5">Recomendação para estudo e aplicação prática</h3>
               <p>Inclua sempre a pergunta: <strong>“Se essa resposta estiver errada, qual o impacto?”</strong>. Essa simples checagem aumenta a qualidade das entregas e reduz riscos.</p>
-              <p class="mb-0">No encerramento, peça que cada grupo apresente: objetivo, técnica usada, validação aplicada e limites identificados.</p>
+              <p class="mb-0">Ao finalizar uma atividade, registre: objetivo, técnica usada, validação aplicada e limites identificados.</p>
             </aside>
           </div>
         </div>
@@ -532,8 +582,9 @@
 
     <section id="recursos" class="py-5 secao-destaque-clara">
       <div class="container">
+        <span class="etiqueta-modulo">Módulo 4 | Aprofundamento</span>
         <h2 class="titulo-secao">Informações complementares e próximos passos</h2>
-        <p class="texto-secao">Materiais para aprofundamento após a oficina e manter evolução prática em IA.</p>
+        <p class="texto-secao">Materiais para aprofundamento após o estudo inicial e evolução prática em IA.</p>
 
         <div class="row g-3">
           <div class="col-md-6 col-xl-3">
@@ -564,7 +615,7 @@
 
         <div class="mt-4 card card-bloco">
           <div class="card-body">
-            <h3 class="h6">Complementos sugeridos para novas turmas</h3>
+            <h3 class="h6">Complementos sugeridos para aprofundar</h3>
             <p class="mb-2">1) Mini trilha de 2h só de prática com revisão em pares.</p>
             <p class="mb-2">2) Banco de prompts por área (educação, administrativo, marketing, atendimento).</p>
             <p class="mb-0">3) Desafio semanal: refinar um prompt real usando CoVe ou autorreflexão.</p>
@@ -572,11 +623,167 @@
         </div>
       </div>
     </section>
+
+    <section id="quiz-avaliativo" class="py-5">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 5 | Avaliação</span>
+        <h2 class="titulo-secao">Quiz avaliativo</h2>
+        <p class="texto-secao">Responda às questões para verificar compreensão dos conceitos e técnicas trabalhados no guia.</p>
+
+        <form id="formularioQuizAvaliativo" class="row g-3 mt-1" novalidate>
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="1" data-correta="b">
+              <div class="card-body">
+                <h3 class="h6">1) Qual elemento mais reduz ambiguidade em um prompt?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta1" value="a" /> Usar termos técnicos complexos.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta1" value="b" /> Definir objetivo, contexto e formato de saída.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta1" value="c" /> Escrever o prompt sem restrições.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="2" data-correta="c">
+              <div class="card-body">
+                <h3 class="h6">2) Em poucas palavras, o que diferencia few-shot de zero-shot?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta2" value="a" /> Few-shot usa menos contexto e zero-shot usa mais.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta2" value="b" /> Não existe diferença prática entre as duas técnicas.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta2" value="c" /> Few-shot usa exemplos prévios, zero-shot não usa exemplos.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="3" data-correta="a">
+              <div class="card-body">
+                <h3 class="h6">3) Qual é a melhor ação inicial em um processo de debug de prompt?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta3" value="a" /> Verificar clareza da tarefa, contexto e público-alvo.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta3" value="b" /> Aumentar o tamanho da resposta sem revisar o pedido.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta3" value="c" /> Trocar de técnica antes de analisar o problema.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="4" data-correta="b">
+              <div class="card-body">
+                <h3 class="h6">4) Para que servem metatags como &lt;objetivo&gt; e &lt;contexto&gt;?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta4" value="a" /> Decorar o texto e deixar o prompt mais longo.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta4" value="b" /> Separar informações e estruturar a instrução com mais precisão.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta4" value="c" /> Impedir completamente erros de resposta.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="5" data-correta="a">
+              <div class="card-body">
+                <h3 class="h6">5) Qual prática representa uso consciente de IA?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta5" value="a" /> Validar fatos críticos e revisar possíveis vieses antes de usar a resposta.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta5" value="b" /> Confiar integralmente na primeira resposta em todo cenário.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta5" value="c" /> Publicar respostas automaticamente sem revisão humana.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-2">
+            <button type="button" id="botaoCorrigirQuiz" class="btn btn-ia">Corrigir quiz</button>
+            <button type="button" id="botaoReiniciarQuiz" class="btn btn-outline-secondary">Reiniciar</button>
+          </div>
+        </form>
+
+        <div id="resultadoQuiz" class="caixa-diagnostico mt-3">
+          Responda às 5 questões e clique em "Corrigir quiz" para ver seu resultado.
+        </div>
+      </div>
+    </section>
+
+    <section id="resumo-principal" class="py-5 secao-destaque-clara">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 5 | Revisão final</span>
+        <h2 class="titulo-secao">Resumo dos pontos principais</h2>
+        <p class="texto-secao">Use este resumo como guia rápido para revisar os fundamentos antes de aplicar prompts em situações reais.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">1) Clareza vem primeiro</h3>
+                <p class="mb-0">Prompt bom descreve objetivo, contexto, público e formato de resposta.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">2) Técnica depende da tarefa</h3>
+                <p class="mb-0">Zero-shot, few-shot, CoT e outras técnicas têm finalidades diferentes.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">3) Iteração melhora resultado</h3>
+                <p class="mb-0">Escrever, testar, depurar e refinar é parte do processo de qualidade.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">4) Metatags organizam dados</h3>
+                <p class="mb-0">Tags ajudam a separar entradas e reduzir respostas genéricas.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">5) Uso consciente é obrigatório</h3>
+                <p class="mb-0">Valide fatos, proteja dados e mantenha supervisão humana.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">6) Aplique no cotidiano</h3>
+                <p class="mb-0">Use exemplos reais do dia a dia para consolidar aprendizagem.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="caixa-saida-mais mt-4">
+          <h3 class="h6 mb-2">Roteiro rápido de revisão</h3>
+          <p class="mb-2">1) Releia o checklist de qualidade de prompt.</p>
+          <p class="mb-2">2) Refaça um prompt antigo usando contexto e formato de saída.</p>
+          <p class="mb-2">3) Rode o prompt, compare versões e escolha a mais útil.</p>
+          <p class="mb-0">4) Registre aprendizados e próximos ajustes para evoluir continuamente.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="rodape py-4">
     <div class="container d-flex flex-column flex-lg-row justify-content-between gap-2">
-      <p class="mb-0">Site didático para oficina: <strong>Inteligência Artificial Descomplicada</strong>.</p>
+      <p class="mb-0">Guia educacional: <strong>Inteligência Artificial Descomplicada</strong>.</p>
     </div>
   </footer>
 
@@ -593,3 +800,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+

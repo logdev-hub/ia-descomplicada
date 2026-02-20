@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tecnicas por Shots | Inteligencia Artificial Descomplicada</title>
-  <meta name="description" content="Pagina de prompts da categoria tecnicas por shots com exemplos praticos e campos de aplicacao." />
+  <meta name="description" content="Guia de prompts da categoria tecnicas por shots com fundamentacao, desafios e aplicacao no dia a dia." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,21 +13,65 @@
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body data-categoria="shots">
-  <nav class="navbar navbar-expand-lg barra-topo sticky-top" aria-label="Navegacao principal">
+  <nav class="navbar navbar-expand-xl barra-topo sticky-top" aria-label="Navegacao principal">
     <div class="container py-1">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#tecnicas">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
         <span class="marca-icone">IA</span>
         <span class="marca-texto">Inteligencia Artificial Descomplicada</span>
       </a>
-      <div class="d-flex gap-2">
-        <a href="index.html" class="btn btn-sm btn-outline-secondary">Pagina inicial</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-principal">
+          <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modulos</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="index.html#modulos">Visao geral dos modulos</a></li>
+              <li><a class="dropdown-item" href="index.html#fundamentos">Modulo 1 | Fundamentos</a></li>
+              <li><a class="dropdown-item" href="index.html#tecnicas">Modulo 2 | Tecnicas</a></li>
+              <li><a class="dropdown-item" href="index.html#gerador">Modulo 3 | Laboratorios</a></li>
+              <li><a class="dropdown-item" href="index.html#boas-praticas">Modulo 4 | Uso consciente</a></li>
+              <li><a class="dropdown-item" href="index.html#quiz-avaliativo">Modulo 5 | Quiz e revisao</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="categoria-bases.html">Bases e estrutura</a></li>
+              <li><a class="dropdown-item" href="categoria-shots.html">Tecnicas por shots</a></li>
+              <li><a class="dropdown-item" href="categoria-raciocinio.html">Raciocinio e encadeamento</a></li>
+              <li><a class="dropdown-item" href="categoria-controle.html">Niveis de controle</a></li>
+              <li><a class="dropdown-item" href="categoria-qualidade.html">Qualidade e verificacao</a></li>
+              <li><a class="dropdown-item" href="categoria-interacao.html">Interacao e metaprompts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laboratorios</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="index.html#gerador">Laboratorio rapido</a></li>
+              <li><a class="dropdown-item" href="index.html#debug-prompts">Debug de prompts</a></li>
+              <li><a class="dropdown-item" href="index.html#interativo-avancado">Interativo avancado</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conteudo</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="como-ia-funciona.html">Como a IA funciona</a></li>
+              <li><a class="dropdown-item" href="glossario-ia.html">Glossario de IA</a></li>
+              <li><a class="dropdown-item" href="index.html#resumo-principal">Resumo dos pontos principais</a></li>
+              <li><a class="dropdown-item" href="index.html#recursos">Recursos complementares</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
   <header class="cabecalho-categoria">
     <div class="container">
-      <p class="etiqueta mb-2">Biblioteca segmentada por categoria</p>
+      <p class="etiqueta mb-2">Fundamentacao + pratica por categoria</p>
       <h1 class="display-6 fw-bold mb-2" id="tituloCategoria">Tecnicas por Shots</h1>
       <p class="mb-3" id="descricaoCategoria"></p>
       <div class="d-flex flex-wrap gap-2">
@@ -51,24 +95,31 @@
         <ul class="lista-campos-aplicacao" id="listaCamposCategoria"></ul>
       </div>
 
+      <div class="resumo-categoria mb-4" id="fundamentacaoCategoria"></div>
+
+      <div class="caixa-saida-mais mb-4">
+        <h2 class="h5 mb-2">Desafio da pagina</h2>
+        <p class="mb-0" id="desafioCategoriaPagina">Carregando desafio...</p>
+      </div>
+
       <div class="resumo-categoria mb-4">
         <h2 class="h5 mb-3">Aplicar esta categoria no seu contexto</h2>
         <form id="formularioAplicacaoCategoria" class="row g-3" novalidate>
           <div class="col-md-6">
             <label for="campoObjetivoAplicacao" class="form-label">Objetivo</label>
-            <input type="text" id="campoObjetivoAplicacao" class="form-control" placeholder="Ex.: criar atividade de IA para turma iniciante" />
+            <input type="text" id="campoObjetivoAplicacao" class="form-control" placeholder="Ex.: planejar rotina semanal sem sobrecarga" />
           </div>
           <div class="col-md-6">
             <label for="campoPublicoAplicacao" class="form-label">Publico-alvo</label>
-            <input type="text" id="campoPublicoAplicacao" class="form-control" placeholder="Ex.: estudantes do ensino tecnico" />
+            <input type="text" id="campoPublicoAplicacao" class="form-control" placeholder="Ex.: adulto com pouco tempo livre" />
           </div>
           <div class="col-md-6">
             <label for="campoContextoAplicacao" class="form-label">Contexto</label>
-            <input type="text" id="campoContextoAplicacao" class="form-control" placeholder="Ex.: oficina de 4 horas" />
+            <input type="text" id="campoContextoAplicacao" class="form-control" placeholder="Ex.: semana com trabalho, casa e estudos" />
           </div>
           <div class="col-md-6">
             <label for="campoFormatoAplicacao" class="form-label">Formato desejado</label>
-            <input type="text" id="campoFormatoAplicacao" class="form-control" placeholder="Ex.: lista em 5 topicos com exemplos" />
+            <input type="text" id="campoFormatoAplicacao" class="form-control" placeholder="Ex.: checklist diario em 5 blocos" />
           </div>
           <div class="col-12 d-flex flex-wrap gap-2">
             <button type="submit" class="btn btn-ia">Gerar prompt de aplicacao</button>
@@ -79,6 +130,11 @@
           <label class="form-label" for="saidaAplicacaoCategoria">Prompt personalizado da categoria</label>
           <textarea id="saidaAplicacaoCategoria" class="form-control" rows="6" placeholder="Seu prompt personalizado aparecera aqui."></textarea>
         </div>
+        <div class="caixa-saida-mais mt-3" id="saidaMaisAplicacaoCategoria">
+          <h3 class="h6 mb-2">Saida+ | Informacoes complementares</h3>
+          <p class="mb-2">Preencha os campos com dados reais do seu dia a dia para obter respostas mais utilitarias.</p>
+          <p class="mb-0">Ajuste o formato de saida para facilitar execucao (checklist, tabela ou plano por etapas).</p>
+        </div>
       </div>
 
       <div class="row g-4" id="gradeCategoria"></div>
@@ -88,7 +144,7 @@
   <footer class="rodape py-4">
     <div class="container d-flex flex-column flex-lg-row justify-content-between gap-2">
       <p class="mb-0">Categoria: <strong>Tecnicas por Shots</strong>.</p>
-      <p class="mb-0">Use os exemplos e adapte para o contexto da sua oficina.</p>
+      <p class="mb-0">Guia introdutorio com foco em aplicacao pratica no cotidiano.</p>
     </div>
   </footer>
 
@@ -106,3 +162,5 @@
   <script src="js/paginas-categorias.js"></script>
 </body>
 </html>
+
+
